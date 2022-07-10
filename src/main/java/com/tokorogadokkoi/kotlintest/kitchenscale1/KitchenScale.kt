@@ -7,7 +7,7 @@ data class Weight(
 class KitchenScale {
 
     fun calc(weight: Weight): String {
-       return  when {
+       return when {
             weight.value < MIN_VALUE -> ERROR_DISPLAY_CHAR
             weight.value > MAX_VALUE -> ERROR_DISPLAY_CHAR
             else -> "${weight.value.toString()}g"
